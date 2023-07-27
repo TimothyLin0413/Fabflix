@@ -1,0 +1,38 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FabFlix - Employee Login</title>
+</head>
+<body>
+<h2>FabFlix - Employee Login</h2>
+<!-- Set the method to POST to avoid showing the username/password in the URL
+     The default action is disabled to allow your own implementation. -->
+<form id="employee_form" method="post" action="#">
+  <label><b>Email</b></label>
+  <label>
+    <input name="email" placeholder="Enter Email" type="text">
+  </label>
+  <br>
+  <label><b>Password</b></label>
+  <label>
+    <input name="password" placeholder="Enter Password" type="password">
+  </label>
+  <br>
+  <br>
+  <div class="g-recaptcha" data-sitekey="6LcuhMAiAAAAAGQTOSkCsW7GsZJlx4sjam_J-szP"></div>
+  <br>
+  <input type="submit" value="Login">
+</form>
+
+<div id="employee_login_error_message"></div>
+
+<!-- include jQuery and reCaptcha-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>
+
+<!-- include our own JS file -->
+<script src="_dashboard_login.js"></script>
+
+</body>
+</html>
