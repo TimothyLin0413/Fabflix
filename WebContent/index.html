@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Fabflix</title>
+
+    <!-- Using jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- include jquery autocomplete JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+
+    <!-- Bootstrap for CSS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+<h1>Welcome to Fablix!</h1>
+<br>
+
+<a href="shopping-cart.html" class ="float-right">Checkout</a>
+<pre>
+
+    Browse Movies in Genre
+
+</pre>
+<table id=genre_table class="table table-striped">
+    <!-- Create a table header -->
+    <thead>
+    <tr>
+        <!-- Titles of each column-->
+    </tr>
+    </thead>
+    <!-- Table body is left empty here, will be populated with the data retrieved with movie_list.js -->
+    <!-- Again, id "movie_table_body" is useful for jQuery to find this html element -->
+    <tbody id=genre_table_body>
+    </tbody>
+</table>
+
+
+<pre>
+
+    Browse Movies in Title
+</pre>
+<a href="movie_list.html?id=browse-title-0"> 0, </a>
+<a href="movie_list.html?id=browse-title-1"> 1, </a>
+<a href="movie_list.html?id=browse-title-2"> 2, </a>
+<a href="movie_list.html?id=browse-title-3"> 3, </a>
+<a href="movie_list.html?id=browse-title-4"> 4, </a>
+<a href="movie_list.html?id=browse-title-5"> 5, </a>
+<a href="movie_list.html?id=browse-title-6"> 6, </a>
+<a href="movie_list.html?id=browse-title-7"> 7, </a>
+<a href="movie_list.html?id=browse-title-8"> 8, </a>
+<a href="movie_list.html?id=browse-title-9"> 9, </a>
+<a href="movie_list.html?id=browse-title-A"> A, </a>
+<a href="movie_list.html?id=browse-title-B"> B, </a>
+<a href="movie_list.html?id=browse-title-C"> C, </a>
+<a href="movie_list.html?id=browse-title-D"> D, </a>
+<a href="movie_list.html?id=browse-title-E"> E, </a>
+<a href="movie_list.html?id=browse-title-F"> F, </a>
+<a href="movie_list.html?id=browse-title-G"> G, </a>
+<a href="movie_list.html?id=browse-title-H"> H, </a>
+<a href="movie_list.html?id=browse-title-I"> I, </a>
+<a href="movie_list.html?id=browse-title-J"> J, </a>
+<a href="movie_list.html?id=browse-title-K"> K, </a>
+<a href="movie_list.html?id=browse-title-L"> L, </a>
+<a href="movie_list.html?id=browse-title-M"> M, </a>
+<a href="movie_list.html?id=browse-title-N"> N, </a>
+<a href="movie_list.html?id=browse-title-O"> O, </a>
+<a href="movie_list.html?id=browse-title-P"> P, </a>
+<a href="movie_list.html?id=browse-title-Q"> Q, </a>
+<a href="movie_list.html?id=browse-title-R"> R, </a>
+<a href="movie_list.html?id=browse-title-S"> S, </a>
+<a href="movie_list.html?id=browse-title-T"> T, </a>
+<a href="movie_list.html?id=browse-title-U"> U, </a>
+<a href="movie_list.html?id=browse-title-V"> V, </a>
+<a href="movie_list.html?id=browse-title-W"> W, </a>
+<a href="movie_list.html?id=browse-title-X"> X, </a>
+<a href="movie_list.html?id=browse-title-Y"> Y, </a>
+<a href="movie_list.html?id=browse-title-Z"> Z, </a>
+<a href="movie_list.html?id=browse-title-*"> *, </a>
+
+
+
+
+<pre>
+
+    Or Search Your Favorite Movies
+</pre>
+
+<div class="collapse" id="collapseForm">
+    <form id="search" autocomplete="off" style="display: flex; flex-direction: column;" action="./movie_list.html">
+        <!-- If decide to add border bottom add : border-bottom-color: #e74c3c !important to style and border-bottom to class -->
+        <input class="search_input" style="width: inherit" type="text" name="title" placeholder="Title">
+        <input class="search_input" style="width: inherit"  type="number" name="year" placeholder="Year">
+        <input class="search_input" style="width: inherit"  type="text" name="director" placeholder="Director">
+        <input class="search_input" style="width: inherit"  type="text" name="star" placeholder="Star">
+        <button style="background-color: white" type="submit">Search <i class="fas fa-search" style="color: #fd0606"></i></button>
+    </form>
+</div>
+
+</div>
+<br>
+<div class="container" id="autoSearch_form">
+    <input type="text" name="autoSearch_text" id="autocomplete"
+           class="autocomplete-searchbox form-control"
+           placeholder="Full-text Search Movie Titles (press enter to normal search)"
+           style="margin-left:0rem;width:99vw"/>
+</div>
+
+<br>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>

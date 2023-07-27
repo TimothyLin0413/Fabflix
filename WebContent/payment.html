@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
+<!--          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+
+    <title>Payment Page</title>
+
+</head>
+<body>
+<a href="shopping-cart.html" class ="float-right">Back To Home Page</a>
+<h1>Checkout</h1>
+<br>
+<h2 id="priceDisplay"></h2>
+<br>
+<h2>Input Credit Card Information</h2>
+
+<form id="sale_form" method="post" action="#">
+    <label><b>Card Holder's First Name</b></label>
+    <label>
+        <input name="firstname" placeholder="Enter First Name" type="text">
+    </label>
+    <br>
+    <label><b>Card Holder's Last Name</b></label>
+    <label>
+        <input name="lastname" placeholder="Enter Last Name" type="text">
+    </label>
+    <br>
+    <label><b>Credit Card Number</b></label>
+    <label>
+        <input name="cardnumber" placeholder="Enter Card Number" type="text">
+    </label>
+    <br>
+    <label><b>Credit Card Expiration Date</b></label>
+    <label>
+        <input name="expiration" placeholder="Enter Expiration Date" type="date">
+    </label>
+    <br>
+    <input type="submit" value="Place Order">
+</form>
+
+<div id="sale_error_message"></div>
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./payment.js"></script>
+
+</body>
+</html>

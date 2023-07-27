@@ -1,0 +1,39 @@
+<!-- This page will be seen if you logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Confirmation Page</title>
+</head>
+<body>
+<a href="index.html" class ="float-right">Back To Home Page</a>
+<h1>Order Confirmed!</h1>
+<h3>Your Order Has Been Placed!</h3>
+
+<table id=confirm_table class="table table-striped">
+    <!-- Create a table header -->
+    <thead>
+    <tr>
+        <!-- Titles of each column-->
+        <th>Sale ID</th>
+        <th>Movie Purchased</th>
+        <th>Quantity</th>
+
+    </tr>
+    </thead>
+    <!-- Table body is left empty here, will be populated with the data retrieved with movie_list.js -->
+    <!-- Again, id "star_table_body" is useful for jQuery to find this html element -->
+    <tbody id=confirm_table_body></tbody>
+</table>
+<h5 id="priceNum"></h5>
+
+<!-- include your own JS file -->
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script type='text/javascript' src='sale_confirmation.js'></script>
+</body>
+</html>
